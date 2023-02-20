@@ -1,441 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-html {
-  background: white; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@media (min-width: 1616px) {
+  html body {
+    background-color: rgb(141, 141, 141);
+  }
+
+  #Eno {
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  #Sidebar {
+    display: block;
+    text-align: left;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 12%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    padding-left: 4px;
+
+    background-color: gray;
+  }
+
+  #Sidebar li {
+    margin: 2px;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+  }
+
+  #nav {
+    text-align: center;
+  }
+  
+  #Main {
+    display: block;
+    position: relative;
+    width: 88%;
+    left: 12%;
+  }
+
+  article {
+    display: block;
+    text-align: center;
+  }
+
+  li {
+    text-align: center;
+    width: auto;
+    padding: 1%;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: top; 
+    border: solid black 4px;
+
+    transition: background-color 1s;
+    font-size: 2em;
+  }
+
+  li:hover {
+    background-color: rgba(0,0,0, 0.4);
+  }
+
+  a {
+    transition: color 1s;
+    color: navy;
+    padding: 0;
+    margin: 0;
+  }
+
+  a:hover {
+    color: cyan;
+  }
+
 }
-
-#wrapper {
-  width: 100%;
-  margin: auto;
-  display: grid;
-  gap: 5px;
-  grid-template-areas:
-    "Top Top Top"
-    "Content Content Content";
-}
-
-a:link { text-decoration: none; }
-
-a:visited { text-decoration: none; }
-
-a:hover { text-decoration: underline; }
-
-a:active { text-decoration: none; }
 
 #Eno {
   display: block;
   margin: auto;
-  grid-area: top;
-}
-
-#c1 {
-  grid-area: c1;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c2 {
-  grid-area: c2;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c3 {
-  grid-area: c3;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c4 {
-  grid-area: c4;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c5 {
-  grid-area: c5;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c6 {
-  grid-area: c6;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c7 {
-  grid-area: c7;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c8 {
-  grid-area: c8;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c9 {
-  grid-area: c9;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c10 {
-  grid-area: c10;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c11 {
-  grid-area: c11;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c12 {
-  grid-area: c12;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-#c13 {
-  grid-area: c13;
-  color: rgb(50,50,50);
-  height: 100%;
-  width: 70%;
-  padding: 3px;
-  margin: auto;
-  font-family: 'Source Code Pro';
-}
-
-
-
-
-
-#l1 {
-  grid-area: l1;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#l2 {
-  grid-area: l2;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#l3 {
-  grid-area: l3;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#l4 {
-  grid-area: l4;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#l5 {
-  grid-area: l5;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#l6 {
-  grid-area: l6;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#l7 {
-  grid-area: l7;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#l8 {
-  grid-area: l8;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#l9 {
-  grid-area: l9;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#l10 {
-  grid-area: l10;
-  color: rgb(75,75,75);
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-
-
-#llt, #ll1, #ll2, #ll3, #ll4, #ll5, #ll6, #ll7, #ll8, #ll9, #ll10, #ll11, #ll12, #ll13 {
-  list-style-type: none;
-  grid-area: side;
-  color: rgb(75,75,75);
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-}
-
-
-
-
-@media (min-width: 2350px) {
-  #topBar {
-    margin: auto;
-    display: grid;
-    grid-area: Top;
-    grid-template-areas:
-      "top top l1 l2 l3 l4 l5 l6 l7 l8 l9 l10";
-  }
-  #tiles {
-    width: 100%;
-    height: 100%;
-    grid-area: Content;
-    grid-auto-rows: 50%;
-    margin: auto;
-    display: grid;
-    gap: 5px;
-    grid-template-areas:
-      "side c1 c1"
-      "side c2 c2"
-      "side c3 c3"
-      "side c4 c4"
-      "side c5 c5"
-      "side c6 c6"
-      "side c7 c7"
-      "side c8 c8"
-      "side c9 c9"
-      "side c10 c10"
-      "side c11 c11"
-      "side c12 c12"
-      "side c13 c13";
-  }
-}
-
-@media (min-width: 1615px) {
-  
-  @media (max-width: 2349px) {
-    #topBar {
-      margin: auto;
-      display: grid;
-      grid-area: Top;
-      grid-template-areas:
-        "top top l1 l2 l3 l4 l5"
-        "top top l6 l7 l8 l9 l10";
-    }
-    #tiles {
-      width: 100%;
-      height: 500%;
-      grid-area: Content;
-      margin: auto;
-      display: grid;
-      gap: 5px;
-      grid-template-areas:
-        "side c1 c1"
-        "side c2 c2"
-        "side c3 c3"
-        "side c4 c4"
-        "side c5 c5"
-        "side c6 c6"
-        "side c7 c7"
-        "side c8 c8"
-        "side c9 c9"
-        "side c10 c10"
-        "side c11 c11"
-        "side c12 c12"
-        "side c13 c13";
-    }
-  }
-}
-
-@media (min-width: 830px) {
-  
-  @media (max-width: 1614px) {
-    #topBar {
-      margin: auto;
-      display: grid;
-      grid-area: Top;
-      grid-template-areas:
-        "top top l1 l2"
-        "top top l3 l4"
-        "top top l5 l6"
-        "top top l7 l8"
-        "top top l9 l10";
-    }
-    #tiles {
-      width: 100%;
-      height: 500%;
-      grid-area: Content;
-      margin: auto;
-      display: grid;
-      gap: 5px;
-      grid-template-areas:
-        "side"  
-        "c1"
-        "c2"
-        "c3"
-        "c4"
-        "c5"
-        "c6"
-        "c7"
-        "c8"
-        "c9"
-        "c10"
-        "c11"
-        "c12"
-        "c13";
-    }
-  }
-}
-
-
-@media (min-width: 445px) {
-
-  @media (max-width: 829px) {
-    #topBar {
-      margin: auto;
-      display: grid;
-      grid-area: Top;
-      grid-template-areas:
-        "top top"
-        "l1 l2"
-        "l3 l4"
-        "l5 l6"
-        "l7 l8"
-        "l9 l10";
-    }
-    #tiles {
-      width: 100%;
-      height: 500%;
-      grid-area: Content;
-      margin: auto;
-      display: grid;
-      gap: 5px;
-      grid-template-areas:
-        "side"
-        "c1"
-        "c2"
-        "c3"
-        "c4"
-        "c5"
-        "c6"
-        "c7"
-        "c8"
-        "c9"
-        "c10"
-        "c11"
-        "c12"
-        "c13";
-    }
-  }
-}
-
-@media (max-width: 444px) {
-  #topBar {
-    margin: auto;
-    display: grid;
-    grid-area: Top;
-    grid-template-areas:
-      "top top"
-      "l1 l2"
-      "l3 l4"
-      "l5 l6"
-      "l7 l8"
-      "l9 l10";
-  }
-  #tiles {
-    width: 100%;
-    height: 500%;
-    grid-area: Content;
-    margin: auto;
-    display: grid;
-    gap: 5px;
-    grid-template-areas:
-      "side"
-      "c1"
-      "c2"
-      "c3"
-      "c4"
-      "c5"
-      "c6"
-      "c7"
-      "c8"
-      "c9"
-      "c10"
-      "c11"
-      "c12"
-      "c13";
-  }
-  #Eno {
-    height: 80%;
-    width: 80%;
-  }
 }
