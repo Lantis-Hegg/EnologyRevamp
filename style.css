@@ -1,6 +1,6 @@
 @media (min-width: 1616px) {
   html body {
-    background-color: rgb(141, 141, 141);
+    background-color: rgb(171, 171, 171);
   }
 
   #Eno {
@@ -10,8 +10,17 @@
     text-align: center;
   }
 
+  img {
+    background-color: rgba(0,0,0,0.2);
+    padding: 1%;
+    padding-top: 0;
+  }
+
   ul {
     text-align: center;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   li {
