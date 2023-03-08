@@ -1,135 +1,17 @@
-/*@media (min-width: 1616px) {
-
-  /*
-  html body {
-    background-color: white;
-  }
-
-  #Eno {
-    display: block;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-  }
-
-  img {
-    background-color: rgba(0,0,0,0.2);
-    padding: 1%;
-    padding-top: 0;
-  }
-
-  ul {
-    text-align: center;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  li {
-    text-align: center;
-    width: auto;
-    height: 30pt;
-    padding: 1%;
-    margin: 4px;
-    display: inline-block;
-    vertical-align: top; 
-    border: solid black 4px;
-
-    transition: background-color 1s;
-    font-size: 2em;
-  }
-
-  li:hover {
-    background-color: rgba(0,0,0, 0.4);
-  }
-
-  a {
-    transition: color 1s;
-    color: navy;
-    padding: 0;
-    margin: 0;
-  }
-
-  a:hover {
-    color: cyan;
-  }
-
-}*/
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
-/* 
-  Currently this site is a very patchwork site, this CSS is made to be more readable than functional.
-  Same goes for the HTML, Try and keep it this way in any changes that you try to push.
-  Imports have to be at the top so no conditionals without java script.
-  Optimization is poor because of this.
-*/
-
-/* Portrait */
-@media (max-width: 1615px){
-  /* Tag styling */
-  html, body {
-    background-color: rgb(30,30,30);
-    color: rgb(200,200,200);
-    height: auto;
-    width: auto;
-    font-family: 'IBM Plex Mono', monospace;
-  }
-
-  h1 {
-    font-size: 2em;
-    text-align: center;
-    font-weight: bold;
-    margin: 0 auto 0 auto;
-  }
-
-  h2 {
-    text-align: center;
-    font-weight: bold;
-  }
-
-  h3 {
-    text-align: center;
-    font-style: italic;
-    font-weight: regular;
-    padding: 0;
-    margin: 0;
-  }
-
-  p {
-    text-align: center;
-    font-weight: regular;
-  }
-
-  img {
-    background-color: rgba(0,0,0, 0.5); 
-    padding: 1%;
-  }
-
-  ul {
-    list-style-type: none;
-    text-align: center;
-  }
-
-  a {
-    color: blue;
-  }
-
-  a:hover {
-    color: purple;
-  }
-
-  section {
-    display: block;
+@media (max-width: 1615px) {
+  html, body{
     width: auto;
     height: auto;
   }
+img {
+  width: 90%;
+}
 
 }
 
-/* WideScreen */
-@media (min-width: 1616px){
-
+@media (min-width: 1616px) {
   /* CSS Animations*/
   @keyframes SidebarHover {
     0%   {width: 100%;  background-color: rgba(29, 17, 0, 0);font-size: 32pt;}
@@ -150,13 +32,12 @@
   html, body {
     background-color: rgb(29, 17, 0);
     color: #5b6770;
-    height: auto;
     width: auto;
     font-family: 'IBM Plex Mono', monospace;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 130%;
     text-align: center;
     font-weight: bold;
     margin: 0 auto 0 auto;
@@ -175,7 +56,7 @@
   }
 
   img {
-    background-color: rgba(0,0,0, 0.5); 
+    background-color: #653024; 
     padding: 1%;
   }
 
@@ -190,18 +71,24 @@
   }
 
   ul {
+    background-color: #653024;
+    color: #e7ceb5;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    white-space: nowrap;
+    width: min-content;
+    margin:0 auto 0 auto;
+    padding: 4pt;
   }
 
   main {
     width: auto;
+    height: auto;
     text-align: center;
-    background-color: #653024;
-    color: #e7ceb5;
+    text-overflow: none;
+    white-space: nowrap;
     padding: 0;
     margin-left: auto;
+    margin-right: auto;
 
     /* ANIMATION WORKS, JUST LOOKS BAD.
       Make look better before adding
@@ -211,27 +98,22 @@
     */
   }
 
-  main img {
-    background-color: rgba(0,0,0,0);
-    margin: 0;
-    padding: 0;
-  }
-
   main a {
     color: inherit;
-    font-size: 32pt;
+    font-size: 100%;
     text-align: center;
     text-decoration: none;
     width: 100%;
   }
 
   main li {
+    border-top: solid black 4pt;
     transition: width 1s, font-size 1s;
   }
   
   main li:hover {
     background-color: rgb(29, 17, 0);
-    font-size: 48pt;
+    font-size: 150%;
   }
 
 }
