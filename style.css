@@ -5,6 +5,7 @@
     width: auto;
     height: auto;
   }
+  
 img {
   width: 90%;
 }
@@ -100,7 +101,7 @@ img {
 
   main a {
     color: inherit;
-    font-size: 100%;
+    font-size: 32pt;
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -114,6 +115,14 @@ img {
   main li:hover {
     background-color: rgb(29, 17, 0);
     font-size: 150%;
+  }
+
+  .WIP {
+    color: black;
+  }
+
+  .WIP:hover {
+    color: black;
   }
 
 }
