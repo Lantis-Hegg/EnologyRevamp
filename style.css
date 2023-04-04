@@ -13,21 +13,6 @@ img {
 }
 
 @media (min-width: 1616px) {
-  /* CSS Animations*/
-  @keyframes SidebarHover {
-    0%   {width: 100%;  background-color: rgba(29, 17, 0, 0);font-size: 32pt;}
-    100% {width: 130%; background-color: rgba(29, 17, 0, 1);font-size: 48pt;}
-  }
-
-  @keyframes SidebarLoad {
-    0%   {width: 0%;  background-color: rgba(101, 48, 36, 0); color: rgba(231, 206, 181, 0);}
-    100% {width: 10%; background-color: rgba(101, 48, 36, 1); color: rgba(231, 206, 181, 1);}
-  } 
-  
-  @keyframes SpecListHover {
-    0% {background-color: rgba(231, 206, 181); color: rgba(231, 206, 181, 0);}
-    100% {background-color: rgba(101, 48, 36); color: rgba(231, 206, 181, 1);}
-  }
 
   /* Tag styling */
   html, body {
@@ -123,6 +108,46 @@ img {
 
   .WIP:hover {
     color: black;
+  }
+
+ /* Side bar, I know I use footer which is confusing but it's become a consistent thing throughout the site.*/
+  footer {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    text-align: left;
+    background-color: #653024;
+    color: white;
+    padding: 0;
+  }
+
+  footer img {
+    background-color: rgba(0,0,0,0);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  footer a {
+    color: white;
+    margin-left: 5%;
+    font-size: 32pt;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  footer li{
+    width: 100%;
+    transition: width 0.5s, background-color 1s;
+  }
+
+  footer li:hover {
+    background-color: rgb(29, 17, 0);
+    width: 130%;
   }
 
 }
