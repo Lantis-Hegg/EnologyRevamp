@@ -133,8 +133,8 @@ img {
 
   footer a {
     color: white;
-    margin-left: 5%;
-    font-size: 32pt;
+    margin-left: 1%;
+    font-size: 24pt;
     text-align: left;
     text-decoration: none;
     width: 100%;
@@ -148,6 +148,34 @@ img {
   footer li:hover {
     background-color: rgb(29, 17, 0);
     width: 130%;
+  }
+
+  section {
+    display: block;
+    position: relative;
+    left: 5%;
+    margin: auto auto auto auto;
+    width: 90%;
+  }
+
+  #title {
+    display: block;
+    width: 80%;
+    margin: auto auto auto auto;
+    padding: 2px;
+    margin-bottom: 1%;
+    color: #d0d3d4;
+  }
+
+  #title p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  #Gen_stuff {
+    padding: 1em;
+    background-color: #e7ceb5;
+    text-align: center;
   }
 
 }
