@@ -1,0 +1,303 @@
+/* Importing Dependencies/Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/* 
+  Currently this site is a very patchwork site, this CSS is made to be more readable than functional.
+  Same goes for the HTML, Try and keep it this way in any changes that you try to push.
+  Imports have to be at the top so no conditionals without java script.
+  Optimization is poor because of this.
+*/
+
+/* Portrait */
+@media (max-width: 1615px){
+  /* Tag styling */
+  html, body {
+    background-color: rgb(30,30,30);
+    color: rgb(250,250,250);
+    height: auto;
+    width: auto;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  h3 {
+    text-align: center;
+    font-style: italic;
+    font-weight: regular;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    text-align: center;
+    font-weight: regular;
+  }
+
+  img {
+    background-color: rgba(0,0,0, 0.5); 
+    padding: 1%;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  a {
+    color: blue;
+  }
+
+  a:hover {
+    color: purple;
+  }
+
+  section {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: rgb(200,200,200);
+  }
+
+  footer img {
+    background-color: rgba(0,0,0,0);
+    Width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer ul {
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+
+/* Classes styling */
+  .SubText {
+    text-align: inherit;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+
+/* ID styling */
+  #title {
+    display: block;
+    width: 80%;
+    margin: auto auto auto auto;
+  }
+  
+  #Gen_stuff {
+    background-color: rgb(15, 15, 15);
+    border: 0.5em solid black;
+    margin: auto 0 auto 0;
+  }
+  
+  #Spec_stuff {
+    background-color: rgb(10, 10, 10);
+    border: 0.5em solid black;
+    margin: auto 0 auto 0;
+  }
+
+}
+
+/* WideScreen */
+@media (min-width: 1616px){
+
+  /* Tag styling */
+  html, body {
+    background-color: rgb(29, 17, 0);
+    color: #5b6770;
+    height: auto;
+    width: auto;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+  }
+
+  ul:nth-child(odd) {
+    width: 45%;
+  }
+
+  ul:nth-child(even) {
+    width: 45%;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  li h2 {
+    margin: 2px 0 2px 0;
+    padding: 0;
+  }
+
+  p {
+    text-align: center;
+    font-weight: bold;
+    margin: 1% auto 1% auto;
+    max-width: 50%;
+  }
+
+  img {
+    padding: 1%;
+  }
+
+  a {
+    color: rgb(10, 116, 0);
+  }
+
+  a:hover {
+    color: rgb(105, 157, 255);
+  }
+
+  section {
+    display: block;
+    position: relative;
+    left: 5%;
+    margin: auto auto auto auto;
+    width: 90%;
+  }
+
+  article {
+    padding: 0;
+    margin: auto auto auto auto;
+  }
+
+  footer {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    text-align: left;
+    background-color: #653024;
+    color: white;
+    padding: 0;
+  }
+
+  footer img {
+    background-color: rgba(0,0,0,0);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  footer a {
+    color: white;
+    margin-left: 5%;
+    font-size: 32pt;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  footer li{
+    width: 100%;
+    transition: width 500ms, background-color 1s;
+  }
+
+  footer li:hover {
+    background-color: rgb(29, 17, 0);
+    width: 130%;
+  }
+
+/* Classes styling */
+  .Proj {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .SubText {
+    font-size: 10pt;
+    padding: 0;
+  }
+
+  .Specs {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: top;
+    border: 2px rgba(0,0,0,0.3) solid;
+
+    transition: background-color 1s, color 1s;
+  }
+
+  .Specs:hover {
+    background-color: #653024;
+    color: rgba(231, 206, 181, 1);
+  }
+
+/* ID styling */ 
+  #FOOTER {
+    list-style-type: none;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+  }
+  
+  #title {
+    display: block;
+    width: 80%;
+    margin: auto auto auto auto;
+    padding: 2px;
+    margin-bottom: 1%;
+    color: #d0d3d4;
+  }
+
+  #title p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  #Gen_stuff {
+    padding: 1em;
+    background-color: #e7ceb5;
+    text-align: center;
+  }
+  
+  #Spec_stuff {
+    padding: 1em;
+    background-color: #e7ceb5;
+    text-align: center;
+  }
+}

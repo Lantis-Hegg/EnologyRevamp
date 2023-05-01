@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-@media (min-width: 1616px) {
-  html body {
+html body {
     background-color: rgb(141, 141, 141);
-  }
+}
 
-  #Eno {
+#Eno {
     display: block;
     margin: auto;
     width: 80%;
     text-align: center;
-  }
+}
 
-  #Sidebar {
+#Sidebar {
     display: block;
     text-align: left;
     position: fixed;
@@ -26,32 +25,32 @@
     padding-left: 4px;
 
     background-color: gray;
-  }
+}
 
-  #Sidebar li {
+#Sidebar li {
     margin: 2px;
     width: 90%;
     padding: 0;
     text-align: center;
-  }
+}
 
-  #nav {
+#nav {
     text-align: center;
-  }
+}
   
-  #Main {
+#Main {
     display: block;
     position: relative;
     width: 88%;
     left: 12%;
-  }
+}
 
-  article {
+article {
     display: block;
     text-align: center;
-  }
+}
 
-  li {
+li {
     text-align: center;
     width: auto;
     padding: 1%;
@@ -62,24 +61,23 @@
 
     transition: background-color 1s;
     font-size: 2em;
-  }
+}
 
-  li:hover {
+li:hover {
     background-color: rgba(0,0,0, 0.4);
-  }
+}
 
-  a {
+a {
     transition: color 1s;
     color: navy;
     padding: 0;
     margin: 0;
-  }
-
-  a:hover {
-    color: cyan;
-  }
-
 }
+
+a:hover {
+    color: cyan;
+}
+
 
 #Eno {
   display: block;
